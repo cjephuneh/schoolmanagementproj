@@ -1,10 +1,10 @@
 import Home from '../src/Components/Home'
+import './App.css'
 
 function App() {
   
   return (
     <div className="App">
-      <h1> caleb here</h1>
       <Home />
     </div>
   )
