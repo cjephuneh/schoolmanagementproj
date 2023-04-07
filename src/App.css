@@ -36,14 +36,15 @@ nav {
 .nav-links-container a {
   margin-right: 2.5rem;
   text-decoration: none;
-  color: black;
+  color: #fafafa;
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 550;
   padding-top: 40px;
+ 
 }
 .nav-button {
   padding: 0.9rem 1.75rem;
-  background-color: white;
+  background-color: rgb(39, 50, 143);
   outline: none;
   border: none;
   border-radius: 5rem;
@@ -62,3 +63,14 @@ nav {
   width: 200px;
   padding-top: 40px;
 }
+
+.Banner-background-cont {
+  position: absolute;
+  top: -10px;
+  right: 70px;
+  z-index: -2;
+  max-width: 700px;
+  height:2500px;
+  width:2500px
+}
+
