@@ -1,73 +1,24 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import "./NavBar.css";
+import React from 'react';
+import './Navbar.css';
+import logo from '../assets/logo1.png';
 
-function NavBar() {
-  const [click, setClick] = useState(false);
-
-  const handleClick = () => setClick(!click);
+function Navbar() {
   return (
-    <>
-      <nav className="navbar">
-        <div className="nav-container">
-          <NavLink exact to="/" className="nav-logo">
-            CodeBucks
-            <i className="fas fa-code"></i>
-          </NavLink>
-
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                Home
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/about"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                About
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/blog"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                Blog
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/contact"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                Contact Us
-              </NavLink>
-            </li>
-          </ul>
-          <div className="nav-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
-          </div>
+    <nav>
+      <div className="navbar-container">
+        <div className="logo-container">
+          <img src={logo} alt="Logo" className="logo"/>
         </div>
-      </nav>
-    </>
+        <ul className="nav-links">
+          <li className="nav-link"><a href="#">Home</a></li>
+          <li className="nav-link"><a href="#">Features</a></li>
+          <li className="nav-link"><a href="#">Pricing</a></li>
+          <li className="nav-link"><a href="#">Contact</a></li>
+        </ul>
+        <button className="demo-button">Request Demo</button>
+      </div>
+    </nav>
   );
 }
 
-export default NavBar;
+export default Navbar;
