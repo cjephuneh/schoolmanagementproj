@@ -1,0 +1,22 @@
+.features-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #7559f3;
+}
+
+
+.feature-box {
+    border-radius: 39px;
+    height: 221px;
+    width: 600px;
+    background-color: #af6161;
+    padding-right: 10px;
+    margin-left
+}
+
+.description {
+    padding: 
+}

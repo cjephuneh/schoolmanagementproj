@@ -1,6 +1,8 @@
 import './App.css'
 import Navbar from '../src/Components/Navbar'
 import Home from '../src/Components/Home'
+import Features from '../src/Components/Features'
+
 
 function App() {
   
@@ -8,6 +10,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Home />
+      <Features />
+
     
     </div>
   )
