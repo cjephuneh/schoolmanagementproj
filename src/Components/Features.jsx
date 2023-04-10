@@ -6,8 +6,8 @@ function Features() {
   return (
     <div classname="features-page">
         <div classname="section-one">
-            <div classname='description'>
-                <h1>A Complete Range Of Features</h1>
+            <div classname='description-title'>
+                <h1 classname='title-1'>A Complete Range Of Features</h1>
                 <p>System defining the full modules which can support the support the school daily<br></br> 
                 operations with website and mobile apps for the parents, students <br></br>
                 and teachers            
